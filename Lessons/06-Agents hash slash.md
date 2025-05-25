@@ -67,7 +67,7 @@ Here are five hands-on exercises to help you get comfortable invoking and combin
 
    - **Success Criteria:** You receive a `settings.json` snippet with `"editor.formatOnSave": true` and the appropriate `[javascript]` or `[javascriptreact]` scope tied to Prettier as the default formatter.
 
-5. **Plan Deployment with `@azure`**
+5. **Plan Deployment with `@azure`** (optional if you have an Azure subscription)
 
    - **Objective:** Scaffold an Azure Static Web App workflow for hosting your Snake game.
 

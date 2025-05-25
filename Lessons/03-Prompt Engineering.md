@@ -31,7 +31,7 @@ You can ask Copilot Chat questions about your project.
 - `how is the snake controlled?`
 - `#file:gameReducer.js #file:gameInit.js how are these files related`
 
-Below are some suggested exercises to practice you prompt engineering. You may have already done some of the features in the previous lesson. Copilot is a non-deterministic tool, meaning you get a different answer for the same question asked multiple times, hence we don't always know what happens 🤓
+Below are some suggested exercises to practice your prompt engineering. You may have already done some of the features in the previous lesson. Copilot is a non-deterministic tool, meaning you get a different answer for the same question asked multiple times, hence we don't always know what happens 🤓
 
 1. **Draft a clear, self-contained prompt**
 

@@ -1,7 +1,7 @@
 ### Finding and Fixing Bugs with GitHub Copilot
 
 #### 1. Identify Bug Symptoms:
-   - Begin by identifying any symptoms or unexpected behavior in the snake game, such as incorrect word placements, grid rendering issues, or game crashes. If you have made the perfect game, get your colleague next to you to introduce a couple of bugs. Make them subtle 😏
+   - Begin by identifying any symptoms or unexpected behavior in the snake game, such as incorrect food placements, grid rendering issues, or game crashes. If you have made the perfect game, get your colleague next to you to introduce a couple of bugs. Make them subtle 😏
    - Pay attention to user-reported issues, error messages, or anomalies observed during gameplay.
 
 #### 2. Reproduce the Bug:

@@ -12,7 +12,6 @@ You may have noticed that extensions in VS Code that were preconfigured either r
     - within the codespace itself.
   - Pay particular attention to the copilot extensions. There should be a Copilot Chat button at the top next to the search bar too.
     - If you don't have the Copilot Chat button, make sure you have installed the Copilot and Copilot chat extensions.
-      ![image-20250525175751724](C:\Users\Lenovo\AppData\Roaming\Typora\typora-user-images\image-20250525175751724.png)
     - Make sure you have logged into GitHub through VS Code.
 
 
@@ -25,7 +24,7 @@ You may have noticed that extensions in VS Code that were preconfigured either r
   - Let's start doing some Copilot goodness! Using the Copilot chat window, describe the snake Game. Use precise natural language outlining the snake game logic, such as "Can you help me write the code for the classic snake game, where players have to grow a snake by controlling it with the arrow keys to eat squares? The gaming area should be 400px by 400px. The language used is JavaScript, HTML, and CSS". 
     Feel free to change how you want to instruct co-pilot. 
     
-  - Copilot is likely to give you a whole directory structure and offer to create the workspace for you. You may also get instructions telling you how to approach setting up the project for the game. From experience the workspace solution generation is hit and miss, and may result in lots of errors. The simple approach to creating a project is often better.
+  - Copilot is likely to give you a whole directory structure and offer to create the workspace for you. You may also get instructions telling you how to approach setting up the project for the game. From experience the workspace solution generation is hit and miss, and may result in lots of errors. The simple approach to creating a project is often better. You can clarify to Copilot that you want basic instructions on how to start rather than a full solution from the beginning. 
   
 - **Review and Refinement:**
 
