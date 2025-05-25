@@ -1,6 +1,6 @@
 # Getting familiar with GitHub
 
-This module gets you up to speed on the most common GitHub features and makes sure you have the necessary knowledge for the rest of the GitHub Copilot workshop. 
+This module gets you up to speed on the most common GitHub features and makes sure you have the necessary knowledge for the rest of the GitHub Copilot workshop. Feel free to skip as much as you need, if you are already familiar with the knowledge.
 
 ## Create a GitHub account (if necessary)
 

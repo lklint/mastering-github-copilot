@@ -1,14 +1,20 @@
 # Developing basic snake game logic
 
-## Opening GitHub Codespace and Setting Up Visual Studio Code:
+Before you start creating our snake game, make sure VS Code is set up correctly. 
 
-As you familiarised yourself with VSCode in the last module you may have noticed that extensions that were preconfigured either required a reload of VSCode/codespace or required you to login to your GitHub account. 
+## Setting Up Visual Studio Code
+
+You may have noticed that extensions in VS Code that were preconfigured either required a reload of VSCode/codespace or required you to login to your GitHub account. 
 
   - Before proceeding further check the extensions do not need an update or reload by opening the extensions panel (on the left, or by Ctrl+Shift+X).
   - You will see a list of installed extensions
     - locally if you are running your codespace via VSCode, and
     - within the codespace itself.
   - Pay particular attention to the copilot extensions. There should be a Copilot Chat button at the top next to the search bar too.
+    - If you don't have the Copilot Chat button, make sure you have installed the Copilot and Copilot chat extensions.
+      ![image-20250525175751724](C:\Users\Lenovo\AppData\Roaming\Typora\typora-user-images\image-20250525175751724.png)
+    - Make sure you have logged into GitHub through VS Code.
+
 
 ## Writing Basic Game Logic using GitHub Copilot in Visual Studio Code:
 
