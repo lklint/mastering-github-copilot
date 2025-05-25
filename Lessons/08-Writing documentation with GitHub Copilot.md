@@ -1,4 +1,4 @@
-### Creating Documentation using GitHub Copilot 
+## Creating Documentation using GitHub Copilot 
 
 Documentation — a word that often invokes a collective sigh among developers. It's the task we know we should do, yet it frequently finds itself at the bottom of our to-do lists. After all, when there's code to write, bugs to fix, and deadlines to meet, who has time to meticulously document every line of code?
 
@@ -33,35 +33,86 @@ In this era of agile development and rapid iteration, the temptation to prioriti
    - Once you're satisfied with the documentation, commit your changes to the codebase using version control.
    - Include a meaningful commit message that describes the documentation updates.
 
-#### Using GitHub `/doc`
+## Exercises
 
-1. Highlight any part of your code, such as the part that calculates which words have been guessed.
-   - Press `Ctrl + i` on a Windows machine, or `Option + i` on a Mac to open Copilot chat inline.
-   - Type `/doc` which will ask Copilot to generate documentation for the highlighted chunk.
-2. Review the suggestion and refresh the output or edit it. 
-   - 
+1. **High-Level Project Overview**
 
-#### Using Chat Feature for Standalone Documentation:
+   - **Objective:** Generate your repo’s README intro.
 
-1. **Open Visual Studio Code and Copilot:**
-   - Launch Visual Studio Code and ensure that the GitHub Copilot extension is installed and activated.
+   - **Prompt:**
 
-2. **Generate Method Documentation**
-   - Create a new file, such as `docs.md`
+     ```
+     @workspace Explain this project: what it does, how it’s structured, and what technologies it uses.  
+     ```
 
-   - Choose a function from your snake game and start the file with `# Documentation for <function> function` where `<function>` is the name of your function.
+   - **Success:** A few paragraphs you can paste into `README.md`.
 
-   - Go to the next line 
+2. **File-Level Documentation with `/doc`**
 
-3. **Review Suggestions:**
-   - Review the suggestions provided by Copilot and ask for further details or modifications if necessary.
-   - Ensure that the generated documentation meets your requirements and aligns with the project's goals.
+   - **Objective:** Create full-page docs for a specific file.
+   - **Steps:**
+     1. Open `src/game.js` in the editor.
+     2. With the file active, type `/doc` and select “Generate documentation for this file.”
+   - **Success:** Copilot spits out markdown or HTML that summarizes all functions, constants, and their roles in `game.js`.
 
-4. **Export Documentation:**
-   - Once you're satisfied with the documentation, export it from the Copilot chat interface to a standalone document.
-   - Save the documentation in a format that can be easily shared and accessed by others, such as Markdown or HTML.
+3. **Function-Level Docs via `/doc` + `#function`**
 
-5. **Publish Documentation:**
-   - Publish the standalone documentation on a separate website, wiki, or documentation platform for broader accessibility and reference.
+   - **Objective:** Annotate a single function with usage and examples.
+   - **Steps:**
+     1. Place your cursor inside `updateSnake`.
+     2. Type `/doc` and pick “Generate docs for this function.” Optionally prepend `#function`.
+   - **Success:** You receive a markdown snippet showing description, parameter table, return value, and a code example.
 
-By following these steps, you can effectively leverage GitHub Copilot in Visual Studio Code to create both inline documentation within your code and standalone documentation for broader distribution and reference.
+4. **Inline JSDoc Comments with `/doc` + `/explain`**
+
+   - **Objective:** Turn comments into proper JSDoc.
+   - **Steps:**
+     1. Select the `placeFood` function code.
+     2. Type `/doc` and choose “Add JSDoc comments.”
+     3. If you want an explanation first, run `/explain` on the same selection.
+   - **Success:** Your source file is updated with `/** … */` blocks above each function.
+
+5. **Scaffold a Docs Site with `@terminal`**
+
+   - **Objective:** Set up JSDoc and a build script.
+
+   - **Prompt:**
+
+     ```
+     @terminal Show me how to install JSDoc, add a "docs" npm script, and configure jsdoc.json to output HTML to docs/.  
+     ```
+
+   - **Success:** You get install commands, the `"scripts"` snippet, and a sample `jsdoc.json`.
+
+6. **Export Markdown Reference with `#fetch` + `/doc`**
+
+   - **Objective:** Pull in external plugin docs and generate a consolidated API.md.
+
+   - **Steps:**
+
+     ```
+     #fetch https://github.com/jsdoc/jsdoc#plugins  
+     /doc Generate a Node.js script or npm command that uses jsdoc-to-markdown to produce API.md from src/**/*.js  
+     ```
+
+   - **Success:** Copilot gives you a runnable script or `package.json` entry invoking `jsdoc2md` over your code.
+
+7. **Automate Docs in CI with `@github`**
+
+   - **Objective:** Publish docs on every push to `main`.
+
+   - **Prompt:**
+
+     ```
+     @github Create a GitHub Actions workflow that:
+       1. Checks out code
+       2. Installs dependencies
+       3. Runs npm run docs
+       4. Commits and pushes docs/ to gh-pages
+     ```
+
+   - **Success:** A `.github/workflows/docs.yml` you can drop into your repo for fully automated docs deployment.
+
+------
+
+By mixing `/doc` with context commands like `@workspace`, `#function`, and external fetches, you’ll get hands-on practice generating everything from function-level JSDoc to full static websites—and automating the entire pipeline.
